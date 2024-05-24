@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>.counter {
+    width: 100%;
+    max-width: 50%;
+    margin: 0px auto;
+    text-align: center;
+}
+div#count-val {
+    font-size: 90px;
+}
+button {
+    padding: 10px 46px;
+    font-size: 22px;
+    background: black;
+    color: #ffffff;
+}
+input#guessNumber {
+    width: 100%;
+    max-width: 22%;
+    height: 30px !important;
+    padding: 0px 20px;
+}
+div#result {
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.your-guess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+</style>
+<body>
+        <div class="counter">
+            <h1>Guess the number</h1>
+            <p>Enter a guess between 0 to 100</p>
+            <br>
+            
+            <form id="guessForm">
+                <label for="guessNumber">Guess the number:</label>
+                <br><br>
+                <input placeholder="enter a number"
+                max="100" min="0" type="number" id="guessNumber">
+                <br></br>
+            <button id="submitNumber">Submit</button>
+            <button id="startGame">Start Game</button>
+            </form>
+            
+            <div id="result"></div>
+            <div class="your-guess">
+                your guess:
+                <p id="guess-numbers"></p>
+            </div>
+            
+        </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
