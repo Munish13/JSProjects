@@ -10,7 +10,7 @@ telInput.addEventListener("input", (e) => {
         firstThreeNum = inputVal.substring(0, 3);
         telInput.value = `+(${firstThreeNum}) - ${inputVal[inputVal.length - 1]}`
     } else if (inputVal.length === 9 && previousValue.length > inputVal.length) {
-        telInput.value = firstThreeNum;
+        telInput.value = firstThreeNum
     }
 
     previousValue = inputVal;
